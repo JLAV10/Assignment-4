@@ -1,23 +1,21 @@
-/* RESET */
+/* BODY */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: Arial;
   background: linear-gradient(to right, #d97706, #f59e0b);
   color: white;
-  transition: 0.4s ease;
+  text-align: center;
 }
 
 /* NAVBAR */
 .navbar {
-  background-color: #1f1f1f;
-  padding: 15px;
+  background: #1f1f1f;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
   position: sticky;
   top: 0;
-  z-index: 1000;
 }
 
 .logo {
@@ -27,69 +25,59 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #f59e0b;
+  text-decoration: none;
 }
 
 /* HAMBURGER */
 .hamburger {
   display: none;
+  color: white;
   font-size: 26px;
   cursor: pointer;
-  color: white;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .overlay {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.6);
   padding: 40px;
-  border-radius: 20px;
-  max-width: 750px;
+  border-radius: 15px;
+  max-width: 700px;
 }
 
 img {
   width: 100%;
-  max-width: 600px;
   border-radius: 15px;
-  margin-top: 15px;
 }
 
 /* BUTTON */
 button {
-  margin-top: 20px;
-  padding: 12px 20px;
+  margin-top: 15px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 10px;
-  background: #f59e0b;
+  background: #111;
   color: white;
   cursor: pointer;
-  font-weight: bold;
 }
 
 /* DARK MODE */
 body.dark-mode {
-  background: linear-gradient(to right, #0f172a, #1e293b);
+  background: #0f172a;
 }
 
 body.dark-mode .container {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.1);
 }
 
 /* RESPONSIVE */
@@ -99,10 +87,9 @@ body.dark-mode .container {
     flex-direction: column;
     background: #1f1f1f;
     position: absolute;
-    top: 60px;
     right: 0;
-    width: 200px;
-    padding: 15px;
+    top: 60px;
+    width: 150px;
   }
 
   .nav-links.active {
